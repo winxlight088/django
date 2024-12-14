@@ -2,7 +2,21 @@ from django.shortcuts import render,HttpResponse
 
 # Create your views here.
 def home(request):
-    return HttpResponse("First app")
+    person =[
+        {"name":"Nisha","age":"23"},
+        {"name":"isha","age":"53"},
+        {"name":"miha","age":"13"},
+        {"name":"miha","age":"13"},
+        {"name":"miha","age":"13"},
+        {"name":"miha","age":"13"},
+        {"name":"miha","age":"13"}
+    ]
+    context = {
+        "key":"Anisha",
+        "persons":person
+    }
+    return render(request,'index.html',context) 
+    # return HttpResponse("First app")
 
 def contact(request):
     return HttpResponse("This is contact page!")
