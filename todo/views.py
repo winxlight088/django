@@ -19,13 +19,13 @@ def home(request):
     ]
     context = {
         "key":"Anisha",
-        "persons":person
+        "p":person
     }
     return render(request,'index.html',context) 
     # return HttpResponse("First app")
 
 def contact(request):
-    return HttpResponse("This is contact page!")
+    return render(request,"contact.html")
 
 def aboutpage(request):
     return HttpResponse("This is about page!")

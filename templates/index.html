@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django first App</title>
-</head>
-<body>
+{% extends "base.html"%}
+{% block title %}Index{% endblock title%}
+
+{% block body %}
     <h1>{{key}}</h1>
 
     <table border="1">
@@ -15,7 +11,7 @@
             <th>age</th>
         </thead>
         <tbody>
-            {% for person in persons %}
+            {% for person in p %}
             
             <tr>
                 <td>{{forloop.counter}}</td>
@@ -35,5 +31,4 @@
             {% endfor %}
         </tbody>
     </table>
-</body>
-</html>
+{% endblock body%}

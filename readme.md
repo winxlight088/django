@@ -16,3 +16,33 @@ python manage.py startapp todo
 
 <!-- run django-->
 python manage.py runserver
+
+<!-- INSTALL requirements-->
+pip install -r requirements.txt
+
+
+<!-- to open python shell-->
+python manage.py shell
+
+
+<!-- create data in terminal-->
+<Model_name>.objects.create(field1="..",field2="..",field3=".." )
+
+<!-- Get all the data of the model-->
+<Model_name>.objects.all()
+
+<!-- Get single data of the model-->
+<Model_name>.objects.get(fieldyouwanttoget = "", or id =1)
+
+<!-- Filter data-->
+<Model_name>.objects.filter(fields = "", field2 = "")
+
+<!-- save the data-->
+<Model_name>.save()
+
+<!-- delete datal-->
+<Model_name>.delete()
+
+
+
+
