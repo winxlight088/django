@@ -43,6 +43,9 @@ python manage.py shell
 <!-- delete datal-->
 <Model_name>.delete()
 
+<!-- activate/create/add adminuser-->
+python manage.py createsuperuser
+
 
 
 
