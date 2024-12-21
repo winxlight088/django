@@ -11,21 +11,21 @@
             <th>age</th>
         </thead>
         <tbody>
-            {% for person in p %}
+            {% for persons in p %}
             
             <tr>
                 <td>{{forloop.counter}}</td>
-                <td>{{person.name}}</td>
+                <td>{{persons.name}}</td>
                 <td>
-                {% if person.age <= 25 %}
+                {% if persons.age <= 25 %}
                 adult
-                {% elif person.age >= 26 and person.age <= 50 %}
+                {% elif persons.age >= 26 and persons.age <= 50 %}
                 growing old
 
                 {% else %}
                 old
                 {% endif %}
-                {{person.age}}
+                {{persons.age}}
                 </td>
             </tr>
             {% endfor %}
