@@ -4,11 +4,15 @@
  <!-- activate virtual environment in cmd>-->
  env\Scripts\activate
 
- <!-- Install django in terminal-->
- pip install django
-
 <!-- create project-->
-django-admin start project myproject1 .
+django-admin startproject myproject1 .
+ 
+<!-- Install django in terminal-->
+pip install django
+
+<!-- INSTALL requirements-->
+pip freeze > requirements.txt
+
 
 <!-- create app-->
 <!-- python manage.py <app_name>-->
@@ -17,8 +21,6 @@ python manage.py startapp todo
 <!-- run django-->
 python manage.py runserver
 
-<!-- INSTALL requirements-->
-pip install -r requirements.txt
 
 
 <!-- to open python shell-->
