@@ -1,11 +1,13 @@
-<!-- install virtual environment --->
- pip install virtualenv
+<!-- createvirtual environment --->
+1. python -m venv env
+
+step2: create gitignore file
 
  <!-- activate virtual environment in cmd>-->
  env\Scripts\activate
 
 <!-- create project-->
-django-admin startproject myproject1 .
+django-admin startproject project_name .
  
 <!-- Install django in terminal-->
 pip install django
